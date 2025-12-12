@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 import java.net.URI;
 
 @RestControllerAdvice
-public class GlobalExceptionHandler {
+public class CategoryExceptionHandler {
 
     @ExceptionHandler({ CategoryNotFoundException.class })
     @ResponseStatus(HttpStatus.NOT_FOUND)
@@ -30,4 +30,7 @@ public class GlobalExceptionHandler {
         pd.setType(URI.create("https:/www.awesomeurl.com/erros/bad-request"));
         return pd;
     }
+
+
+
 }
