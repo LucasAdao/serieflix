@@ -36,6 +36,7 @@ build/
 .env
 
 ### MAVEN ###
-.mvnw
-.mvnw.cmd
+mvnw
+mvnw.cmd
 .mvn
+.gitattributes
